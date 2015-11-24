@@ -1,7 +1,7 @@
-# Test case for tempfile error
+# Test case for python 3.5 tempfile error
 
 This repository is a test case for an error with the
-`tempfile.TemporaryFile()` call in the python standard library.
+`tempfile.TemporaryFile()` call in the python 3.5 standard library.
 When calling `tempfile.TemporaryFile()` with the dir argument set to a
 directory mounted from the host OS a `FileNotFoundError` is thrown.
 
