@@ -1,5 +1,17 @@
 # Test case for python 3.5 tempfile error
 
+### Updated run steps
+
+1. `vagrant up`
+2. `vagrant ssh`
+3. `sh /vagrant/buildpy.sh` (now inside vm)
+4. `./py35/dist/bin/python3.5 /vagrant/temptest.py` (test distributed
+   python)
+5. `./py35/patch/bin/python3.5 /vagrant/temptest.py` (test patched
+   python)
+
+
+
 This repository is a test case for an error with the
 `tempfile.TemporaryFile()` call in the python 3.5 standard library.
 When calling `tempfile.TemporaryFile()` with the dir argument set to a
